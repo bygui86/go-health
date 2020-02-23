@@ -17,6 +17,13 @@ http GET localhost:8080/healthcheck
 
 ---
 
+## TODO
+- [ ] test with a REST server
+- [ ] test with a gRPC server
+- [ ] test with a gRPC client
+
+---
+
 ## Links
 
 - https://github.com/etherlabsio/healthcheck
