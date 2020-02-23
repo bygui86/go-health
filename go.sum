@@ -1,0 +1,8 @@
+github.com/etherlabsio/healthcheck v0.0.0-20191224061800-dd3d2fd8c3f6 h1:az9jaEKre+mwUWiS9Pl8h1FuOvdiFM7UqplmCmJtHUQ=
+github.com/etherlabsio/healthcheck v0.0.0-20191224061800-dd3d2fd8c3f6/go.mod h1:ZMSmptAGNIg5UAxsJzmw5DMW6uQvxr/hvCklNwtFz1k=
+github.com/go-sql-driver/mysql v1.5.0 h1:ozyZYNQW3x3HtqT1jira07DN2PArx2v7/mN66gGcHOs=
+github.com/go-sql-driver/mysql v1.5.0/go.mod h1:DCzpHaOWr8IXmIStZouvnhqoel9Qv2LBy8hT2VhHyBg=
+github.com/gorilla/mux v1.7.4 h1:VuZ8uybHlWmqV03+zRzdwKL4tUnIp1MAQtp1mIFE1bc=
+github.com/gorilla/mux v1.7.4/go.mod h1:DVbg23sWSpFRCP0SfiEN6jmj59UnW/n46BH5rLB71So=
+golang.org/x/sys v0.0.0-20200219091948-cb0a6d8edb6c h1:jceGD5YNJGgGMkJz79agzOln1K9TaZUjv5ird16qniQ=
+golang.org/x/sys v0.0.0-20200219091948-cb0a6d8edb6c/go.mod h1:h1NjWce9XRLGQEsW7wpKNCjG9DtNlClVuFLEZdDNbEs=
