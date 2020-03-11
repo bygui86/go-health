@@ -69,5 +69,4 @@ out/
 ########### Project specific
 vendor/*
 !vendor/.gitkeep
-grpc-server
-grpc-client
+go-healthcheck
