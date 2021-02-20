@@ -1,29 +1,9 @@
 
-# go-healthcheck
-Example project to understand healthcheck go library
+# Go Health
 
-## Run
-`INFO`: to better test this library, it's a good idea to avoid starting the DB
-```shell
-go run main.go
-```
+Example project to understand how to implement health checks in Golang
 
-## Test
-```shell
-curl localhost:8080/healthcheck | jq
-# or
-http GET localhost:8080/healthcheck
-```
+## Libraries
 
----
-
-## TODO
-- [ ] test with a REST server
-- [ ] test with a gRPC server
-- [ ] test with a gRPC client
-
----
-
-## Links
-
-- https://github.com/etherlabsio/healthcheck
+- [x] etherlabsio/healthcheck
+- [ ] hellofresh/health-go - `WIP`

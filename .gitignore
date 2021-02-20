@@ -65,8 +65,3 @@ out/
 
 ########### ProtoBuf generated
 *.pb.go
-
-########### Project specific
-vendor/*
-!vendor/.gitkeep
-go-healthcheck
