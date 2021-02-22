@@ -32,3 +32,7 @@ httpie
 ## Links
 
 - https://github.com/hellofresh/health-go
+
+### available checks
+
+- https://github.com/hellofresh/health-go/tree/master/checks
