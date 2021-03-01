@@ -24,7 +24,7 @@ func main() {
 
 	fmt.Println("Prepare HTTP router")
 	router := mux.NewRouter()
-	router.Handle("/healtz", getHealtzHandler(db))
+	router.Handle("/healthz", getHealthzHandler(db))
 
 	fmt.Println("Start REST server")
 	http.ListenAndServe("0.0.0.0:8080", router)
@@ -35,7 +35,7 @@ func main() {
 	}
 }
 
-func getHealtzHandler(db *sql.DB) http.Handler {
+func getHealthzHandler(db *sql.DB) http.Handler {
 	return healthcheck.Handler(
 		// WithTimeout allows you to set a max overall timeout
 		healthcheck.WithTimeout(5*time.Second),

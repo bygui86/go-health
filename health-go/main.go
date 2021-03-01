@@ -17,38 +17,38 @@ import (
 
 func main() {
 	// add some checks on instance creation
-	healtz, healtzErr := buildHealthWithChecks()
-	if healtzErr != nil {
-		panic(healtzErr)
+	healthz, healthzErr := buildHealthWithChecks()
+	if healthzErr != nil {
+		panic(healthzErr)
 	}
 
 	// register some more checks if needed
-	regErr := registerAdditionalChecks(healtz)
+	regErr := registerAdditionalChecks(healthz)
 	if regErr != nil {
 		panic(regErr)
 	}
 
-	// handlerUsageSample_httpStandard(healtz)
+	// handlerUsageSample_httpStandard(healthz)
 
-	handlerUsageSample_muxRouter(healtz)
+	handlerUsageSample_muxRouter(healthz)
 
-	// handlerFuncUsageSample_chiRouter(healtz)
+	// handlerFuncUsageSample_chiRouter(healthz)
 }
 
-func handlerUsageSample_httpStandard(healtz *health.Health) {
-	http.Handle("/healtz", healtz.Handler())
+func handlerUsageSample_httpStandard(healthz *health.Health) {
+	http.Handle("/healthz", healthz.Handler())
 	http.ListenAndServe("0.0.0.0:8080", nil)
 }
 
-func handlerUsageSample_muxRouter(healtz *health.Health) {
+func handlerUsageSample_muxRouter(healthz *health.Health) {
 	router := mux.NewRouter()
-	router.Handle("/healtz", healtz.Handler())
+	router.Handle("/healthz", healthz.Handler())
 	http.ListenAndServe("0.0.0.0:8080", router)
 }
 
-func handlerFuncUsageSample_chiRouter(healtz *health.Health) {
+func handlerFuncUsageSample_chiRouter(healthz *health.Health) {
 	router := chi.NewRouter()
-	router.Get("/healtz", healtz.HandlerFunc)
+	router.Get("/healthz", healthz.HandlerFunc)
 	http.ListenAndServe("0.0.0.0:8080", nil)
 }
 
@@ -108,8 +108,8 @@ func buildHealthWithChecks() (*health.Health, error) {
 	)
 }
 
-func registerAdditionalChecks(healtz *health.Health) error {
-	return healtz.Register(
+func registerAdditionalChecks(healthz *health.Health) error {
+	return healthz.Register(
 		health.Config{
 			Name:      "rabbitmq",
 			Timeout:   2 * time.Second,

@@ -3,31 +3,31 @@
 
 1. Run application
 
-  ```bash
-  go run main.go
-  ```
+    ```bash
+    go run main.go
+    ```
 
 1. Check application health
 
-browser
-  ```bash
-  open http://localhost:8080/healtz
-  ```
+    - browser
+        ```bash
+        open http://localhost:8080/healthz
+        ```
 
-curl
-  ```bash
-  curl localhost:8080/healtz
-  ```
+    - curl
+        ```bash
+        curl localhost:8080/healthz
+        ```
 
-curl + jq
-  ```bash
-  curl localhost:8080/healtz | jq
-  ```
+    - curl + jq
+        ```bash
+        curl localhost:8080/healthz | jq
+        ```
 
-httpie
-  ```bash
-  http GET localhost:8080/healtz
-  ```
+    - httpie
+        ```bash
+        http GET localhost:8080/healthz
+        ```
 
 ## Links
 
